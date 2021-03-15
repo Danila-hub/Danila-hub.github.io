@@ -1,0 +1,53 @@
+@import 'nullifying.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+.text_1{
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header{
+  
+  &__inner{
+    text-align: center;
+  }
+  &__mainText{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+  }
+  &__nav{
+    max-width: 656px;
+    margin: 0 auto;
+    
+  } 
+  
+  &__navItem{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    
+    
+  }
+  
+  
+  
+}
+
