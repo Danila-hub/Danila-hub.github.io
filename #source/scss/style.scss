@@ -1,7 +1,8 @@
 @import 'nullifying.scss';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 .text_1{
   font-size: 60px;
   font-family: 'Playfair Display', serif;
@@ -18,13 +19,16 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+
 .header{
   
+  max-height: 179px;
   &__inner{
     text-align: center;
+    margin: 50px 0 30px 0;
   }
   &__mainText{
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -33,6 +37,10 @@
   &__nav{
     max-width: 656px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
     
   } 
   
@@ -41,13 +49,52 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 32px;
-    
-    
+    font-size: 16px; 
+    a {
+      color: #000 !important;
+      text-decoration: none
+    } 
   }
-  
-  
-  
+}
+.heading{
+  &__inner{
+    margin-top: 137px;
+  }
+  &__row{
+    display: flex;
+    flex-flow: row;
+  }
+  &__title{
+    display: flex;
+    flex-flow: column;
+  }
+  &__smallTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #967675;
+  }
+  &__titleText{
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+  }
+  &__subRow{
+    display: flex;
+    align-items: center;
+  }
+  &__alignText{
+    font-size: 40px;
+    letter-spacing: -6px;
+    margin-right: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+  &__alignText span:nth-child(1){
+    vertical-align: super;
+  }
+  &__alignText span:nth-child(3){
+    vertical-align: sub;
+  }
 }
 

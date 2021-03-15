@@ -2,6 +2,8 @@
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -109,11 +111,15 @@ h6 {
   margin: 0 auto;
 }
 
+.header {
+  max-height: 179px;
+}
 .header__inner {
   text-align: center;
+  margin: 50px 0 30px 0;
 }
 .header__mainText {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-weight: 800;
@@ -122,6 +128,10 @@ h6 {
 .header__nav {
   max-width: 656px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 25px;
 }
 .header__navItem {
   display: inline-block;
@@ -129,5 +139,48 @@ h6 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 32px;
+}
+.header__navItem a {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+.heading__inner {
+  margin-top: 137px;
+}
+.heading__row {
+  display: flex;
+  flex-flow: row;
+}
+.heading__title {
+  display: flex;
+  flex-flow: column;
+}
+.heading__smallTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #967675;
+}
+.heading__titleText {
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+.heading__subRow {
+  display: flex;
+  align-items: center;
+}
+.heading__alignText {
+  font-size: 40px;
+  letter-spacing: -6px;
+  margin-right: 15px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+.heading__alignText span:nth-child(1) {
+  vertical-align: super;
+}
+.heading__alignText span:nth-child(3) {
+  vertical-align: sub;
 }
