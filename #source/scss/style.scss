@@ -14,18 +14,25 @@
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+  
 }
 .container{
   max-width: 1140px;
   margin: 0 auto;
+  
+  
+}
+.content{
+  background: url(/img/background_images/background__lines.png);
 }
 
 .header{
-  
+  border-bottom: 1px solid #EDEDED;
   max-height: 179px;
   &__inner{
     text-align: center;
     margin: 50px 0 30px 0;
+    
   }
   &__mainText{
     font-size: 40px;
@@ -58,15 +65,17 @@
 }
 .heading{
   &__inner{
-    margin-top: 137px;
+    margin-top: 100px;
   }
   &__row{
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
   }
   &__title{
     display: flex;
     flex-flow: column;
+    padding-top: 64px;
   }
   &__smallTitle{
     font-family: 'Poppins', sans-serif;
@@ -75,7 +84,7 @@
     color: #967675;
   }
   &__titleText{
-    font-size: 80px;
+    font-size: 85px;
     font-family: 'Playfair Display', serif;
     font-weight: 900;
   }
@@ -95,6 +104,77 @@
   }
   &__alignText span:nth-child(3){
     vertical-align: sub;
+  }
+  &__bottom{
+    height: 60px;
+    width: 185px;
+    border: 1px solid #CFADAC;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(150, 79, 76, 0.32);
+    margin-top: 40px;
+    text-align: center;
+  }
+  &__bottom:hover{
+    box-shadow: 0px 8px 20px silver;
+    border-color: silver;
+    transition: 1s;
+  }
+  &__bottomText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #967675;
+    line-height: 60px;
+  }
+  &__images{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+  }
+  &__imageWoman{
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    z-index: 21;
+  }
+  &__imageMan{
+    position: absolute;
+    top: 150px;
+    left: 265px;
+    z-index: 20;
+  }
+  &__imagEllipse{
+    position: absolute;
+    top: -10px;
+    left: -175px;
+    z-index: 19;
+    opacity: 0.5;
+  }
+}
+.headingList{
+  margin-top: 300px;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 300px;
+    
+  }
+  &__title{
+    font-family: Playfair Display;
+    font-style: italic; 
+    font-size: 38px;  
+  }
+  &__subtitle{
+    font-family: Poppins;
+    font-size: 16px;
+    color: #9D8888;
+    padding-top: 29px;
+    padding-left: 31px;
+    line-height: 165.9%;
   }
 }
 
