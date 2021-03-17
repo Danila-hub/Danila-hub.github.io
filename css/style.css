@@ -318,7 +318,7 @@ h6 {
 }
 
 .preview {
-  margin-bottom: 113px;
+  margin-bottom: 173px;
 }
 .preview__caption {
   margin-top: 200px;
@@ -404,4 +404,159 @@ h6 {
 .preview__moreImage {
   position: absolute;
   top: 27px;
+}
+
+.quote {
+  margin-bottom: 97px;
+}
+.quote__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 518px;
+}
+.quote__title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #23242C;
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+.quote__image {
+  position: absolute;
+  z-index: 0;
+}
+
+.contact__inner {
+  background-color: #F9F2EF;
+}
+.contact__subtitle {
+  padding-top: 68px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #967675;
+}
+.contact__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 102px;
+  line-height: 110px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+.contact__input {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.contact__form {
+  max-width: 738px;
+  width: 100%;
+  border-bottom: 1px solid rgba(150, 118, 117, 0.5);
+  margin-right: 30px;
+}
+.contact__email {
+  max-width: 738px;
+  width: 100%;
+  background-color: #F9F2EF;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  color: #DCCBC6;
+  font-weight: 300;
+  padding-left: 13px;
+}
+.contact__submit {
+  height: 60px;
+  width: 185px;
+  border: 1px solid #CFADAC;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(150, 79, 76, 0.32);
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.contact__submitText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 60px;
+  color: #967675;
+}
+
+.footer__inner {
+  background-color: #23242C;
+}
+.footer__row {
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 130px;
+  justify-content: space-between;
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+.footer__title {
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  max-width: 303px;
+  margin-bottom: 122px;
+}
+.footer__infoCopyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  opacity: 0.5;
+  font-weight: normal;
+}
+.footer__nav {
+  display: flex;
+}
+.footer__navItem {
+  max-width: 206;
+  padding-right: 80px;
+}
+.footer__navTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 13px;
+}
+.footer__navLinks {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+}
+.footer__navlink {
+  margin-bottom: 13px;
+}
+.footer__navLinks a {
+  color: white;
 }
