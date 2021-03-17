@@ -498,6 +498,8 @@
   .heading {
     &__title {
       padding-left: 15px;
+      max-width: 500px;
+      width: 100%;
     }
     &__titleText {
       font-size: 66px;
@@ -506,10 +508,10 @@
       font-size: 33px;
     }
     &__imageWoman {
-      left: 80px;
+      left: 0px;
     }
     &__imageMan {
-      left: 215px;
+      left: 135px;
     }
   }
   .headingList {
@@ -522,8 +524,8 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-    &__item{
-     padding: 0;
+    &__item {
+      padding: 0;
     }
     &__smallTitle {
       font-size: 20px;
@@ -541,5 +543,253 @@
       margin-top: 30px;
     }
   }
+  .preview {
+    &__caption {
+      margin-top: 170px;
+      margin-bottom: 90px;
+    }
+    &__row {
+      display: block;
+    }
+    &__item {
+      background-color: #f6ece8;
+      text-align: center;
+      padding-top: 20px;
+    }
+    &__item:nth-child(2n) {
+      margin-top: 0px;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__subtitle {
+      margin: 0 auto;
+    }
+  }
+  .contact {
+    &__input {
+      padding: 0 30px;
+      padding-bottom: 50px;
+    }
+  }
+  .footer {
+    &__navItem {
+      padding-right: 40px;
+    }
+  }
+}
+@media only screen and (max-width : 800px)  {
+  .heading {
+    &__alignText {
+      display: none;
+    }
+    &__imageWoman {
+      position: static;
+      padding-right: 15px;
+    }
+    &__imageMan {
+      display: none;
+    }
+    &__imagEllipse {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  .headingList {
+    margin-top: 140px;
+    padding: 0 15px;
+  }
+  .footer {
+    &__row {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 26px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 92px; 
+    }
+    &__infoCopyright {
+      font-size: 13px;
+    }
+    &__navItem {
+      padding-right: 30px;
+    }
+    &__navTitle {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+ 
+    &__navLinks {
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+}
+@media only screen and (max-width : 650px)  {
+  .header {
+    &__inner {
+      margin: 15px 0 15px 0;
+    }
+    &__icon {
+      margin-bottom: 3px;
+    }
+    &__mainText {
+      font-size: 35px;
+    }
+    &__nav {
+      justify-content: center;
+      margin-top: 25px;
+    }
   
+    &__navItem {
+      font-size: 14px;
+      padding-right: 15px;
+      line-height: 30px;
+    }
+  }
+  .headingList {
+    margin-top: 130px;
+    padding: 0 15px;
+  }
+  .footer {
+    &__row {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 26px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 32px; 
+    }
+    &__infoCopyright {
+      font-size: 12px;
+    }
+    &__nav{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width : 585px){
+  .heading {
+    &__title{
+      padding-top: 0;
+    }
+    &__alignText {
+      display: none;
+    }
+    &__imageWoman {
+      position: static;
+      padding-right: 15px;
+    }
+    &__imageWoman img{
+      height: auto;
+      max-width: 200px;
+      
+    }
+    &__imageMan {
+      display: none;
+    }
+    &__imagEllipse {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .headingList {
+    margin-top: 120px;
+    padding: 0 15px;
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 500px;
+    }
+    &__title {
+      font-family: Playfair Display;
+      font-style: italic;
+      font-size: 38px;
+    }
+    &__title::before {
+      content: "";
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      background: url(/img/icons/icon_before.png);
+      margin: 0 10px 10px 0;
+    }
+    &__subtitle {
+      font-family: Poppins;
+      font-size: 16px;
+      color: #9d8888;
+      padding-top: 20px;
+      padding-left: 60px;
+      line-height: 165.9%;
+      margin-bottom: 20px;
+    }
+  }
+  .benefits {
+    margin-top: 100px;
+    &__image img{
+      width: 100%;
+    }
+    &__item {
+      padding: 0;
+    }
+    &__smallTitle {
+      font-size: 20px;
+    }
+    &__title {
+      font-size: 60px;
+      line-height: 77px;
+    }
+  }
+  .preview {
+    &__largeCaption{
+      font-size: 60px;
+    }
+    &__caption {
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+    &__row {
+      display: block;
+    }
+    &__item {
+      background-color: #f6ece8;
+      text-align: center;
+      padding-top: 20px;
+    }
+    &__image img{
+      width: 100%;
+    }
+    &__subtitle {
+      margin: 0 auto;
+    }
+  }
+  .contact {
+    &__input {
+      padding: 0 30px;
+      padding-bottom: 50px;
+      flex-wrap: wrap;
+    }
+    &__form{
+      margin-bottom: 30px;
+    }
+    &__title{
+      font-size: 80px;
+      margin-bottom: 50px;
+    }
+  }
 }

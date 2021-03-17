@@ -583,6 +583,8 @@ h6 {
 @media only screen and (max-width: 1024px) {
   .heading__title {
     padding-left: 15px;
+    max-width: 500px;
+    width: 100%;
   }
   .heading__titleText {
     font-size: 66px;
@@ -591,10 +593,10 @@ h6 {
     font-size: 33px;
   }
   .heading__imageWoman {
-    left: 80px;
+    left: 0px;
   }
   .heading__imageMan {
-    left: 215px;
+    left: 135px;
   }
 
   .headingList {
@@ -626,5 +628,240 @@ h6 {
     max-width: 185px;
     margin: 0 auto;
     margin-top: 30px;
+  }
+
+  .preview__caption {
+    margin-top: 170px;
+    margin-bottom: 90px;
+  }
+  .preview__row {
+    display: block;
+  }
+  .preview__item {
+    background-color: #f6ece8;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .preview__item:nth-child(2n) {
+    margin-top: 0px;
+  }
+  .preview__image {
+    width: 100%;
+  }
+  .preview__subtitle {
+    margin: 0 auto;
+  }
+
+  .contact__input {
+    padding: 0 30px;
+    padding-bottom: 50px;
+  }
+
+  .footer__navItem {
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .heading__alignText {
+    display: none;
+  }
+  .heading__imageWoman {
+    position: static;
+    padding-right: 15px;
+  }
+  .heading__imageMan {
+    display: none;
+  }
+  .heading__imagEllipse {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .headingList {
+    margin-top: 140px;
+    padding: 0 15px;
+  }
+
+  .footer__row {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .footer__title {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+  .footer__subtitle {
+    font-size: 16px;
+    margin-bottom: 92px;
+  }
+  .footer__infoCopyright {
+    font-size: 13px;
+  }
+  .footer__navItem {
+    padding-right: 30px;
+  }
+  .footer__navTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .footer__navLinks {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .header__inner {
+    margin: 15px 0 15px 0;
+  }
+  .header__icon {
+    margin-bottom: 3px;
+  }
+  .header__mainText {
+    font-size: 35px;
+  }
+  .header__nav {
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .header__navItem {
+    font-size: 14px;
+    padding-right: 15px;
+    line-height: 30px;
+  }
+
+  .headingList {
+    margin-top: 130px;
+    padding: 0 15px;
+  }
+
+  .footer__row {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .footer__title {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+  .footer__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .footer__infoCopyright {
+    font-size: 12px;
+  }
+  .footer__nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .heading__title {
+    padding-top: 0;
+  }
+  .heading__alignText {
+    display: none;
+  }
+  .heading__imageWoman {
+    position: static;
+    padding-right: 15px;
+  }
+  .heading__imageWoman img {
+    height: auto;
+    max-width: 200px;
+  }
+  .heading__imageMan {
+    display: none;
+  }
+  .heading__imagEllipse {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .headingList {
+    margin-top: 120px;
+    padding: 0 15px;
+  }
+  .headingList__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .headingList__items {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 500px;
+  }
+  .headingList__title {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-size: 38px;
+  }
+  .headingList__title::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: url(/img/icons/icon_before.png);
+    margin: 0 10px 10px 0;
+  }
+  .headingList__subtitle {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #9d8888;
+    padding-top: 20px;
+    padding-left: 60px;
+    line-height: 165.9%;
+    margin-bottom: 20px;
+  }
+
+  .benefits {
+    margin-top: 100px;
+  }
+  .benefits__image img {
+    width: 100%;
+  }
+  .benefits__item {
+    padding: 0;
+  }
+  .benefits__smallTitle {
+    font-size: 20px;
+  }
+  .benefits__title {
+    font-size: 60px;
+    line-height: 77px;
+  }
+
+  .preview__largeCaption {
+    font-size: 60px;
+  }
+  .preview__caption {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .preview__row {
+    display: block;
+  }
+  .preview__item {
+    background-color: #f6ece8;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .preview__image img {
+    width: 100%;
+  }
+  .preview__subtitle {
+    margin: 0 auto;
+  }
+
+  .contact__input {
+    padding: 0 30px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  .contact__form {
+    margin-bottom: 30px;
+  }
+  .contact__title {
+    font-size: 80px;
+    margin-bottom: 50px;
   }
 }
