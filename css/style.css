@@ -865,3 +865,39 @@ h6 {
     margin-bottom: 50px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .heading__title {
+    padding-top: 0;
+  }
+  .heading__titleText {
+    font-size: 40px;
+  }
+  .heading__imageWoman img {
+    height: auto;
+    max-width: 190px;
+  }
+  .heading__bottom {
+    width: 145px;
+  }
+
+  .benefits__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .quote {
+    margin-bottom: 30px;
+  }
+
+  .preview {
+    margin-bottom: 80px;
+  }
+  .preview__moreBigTitle {
+    font-size: 130px;
+    top: -57px;
+  }
+
+  .contact__title {
+    font-size: 67px;
+  }
+}
