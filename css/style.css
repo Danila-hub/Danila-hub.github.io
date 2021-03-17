@@ -116,7 +116,7 @@ h6 {
 }
 
 .header {
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid #ededed;
   max-height: 179px;
 }
 .header__inner {
@@ -196,7 +196,7 @@ h6 {
 .heading__bottom {
   height: 60px;
   width: 185px;
-  border: 1px solid #CFADAC;
+  border: 1px solid #cfadac;
   border-radius: 6px;
   box-shadow: 0px 8px 16px rgba(150, 79, 76, 0.32);
   margin-top: 40px;
@@ -266,7 +266,7 @@ h6 {
 .headingList__subtitle {
   font-family: Poppins;
   font-size: 16px;
-  color: #9D8888;
+  color: #9d8888;
   padding-top: 29px;
   padding-left: 60px;
   line-height: 165.9%;
@@ -292,14 +292,14 @@ h6 {
 }
 .benefits__title {
   font-family: "Playfair Display", serif;
-  font-size: 102px;
+  font-size: 90px;
   line-height: 110px;
   font-weight: 600;
 }
 .benefits__bottom {
   height: 60px;
   width: 185px;
-  border: 1px solid #CFADAC;
+  border: 1px solid #cfadac;
   border-radius: 6px;
   box-shadow: 0px 8px 16px rgba(150, 79, 76, 0.32);
   margin-top: 40px;
@@ -345,7 +345,7 @@ h6 {
   margin-bottom: 60px;
 }
 .preview__item {
-  background-color: #F6ECE8;
+  background-color: #f6ece8;
   text-align: center;
   flex: 0 1 511px;
 }
@@ -398,7 +398,7 @@ h6 {
   opacity: 0.1;
   font-family: "Playfair Display", serif;
   font-size: 180px;
-  color: #23242C;
+  color: #23242c;
   font-weight: bold;
 }
 .preview__moreImage {
@@ -423,7 +423,7 @@ h6 {
   font-size: 48px;
   font-weight: 600;
   line-height: 64px;
-  color: #23242C;
+  color: #23242c;
   position: relative;
   display: block;
   width: 100%;
@@ -435,7 +435,7 @@ h6 {
 }
 
 .contact__inner {
-  background-color: #F9F2EF;
+  background-color: #f9f2ef;
 }
 .contact__subtitle {
   padding-top: 68px;
@@ -469,21 +469,21 @@ h6 {
 .contact__email {
   max-width: 738px;
   width: 100%;
-  background-color: #F9F2EF;
+  background-color: #f9f2ef;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
   line-height: 42px;
-  color: #DCCBC6;
+  color: #dccbc6;
   font-weight: 300;
   padding-left: 13px;
 }
 .contact__submit {
   height: 60px;
   width: 185px;
-  border: 1px solid #CFADAC;
+  border: 1px solid #cfadac;
   border-radius: 6px;
   box-shadow: 0px 8px 16px rgba(150, 79, 76, 0.32);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
 }
 .contact__submitText {
@@ -494,7 +494,7 @@ h6 {
 }
 
 .footer__inner {
-  background-color: #23242C;
+  background-color: #23242c;
 }
 .footer__row {
   display: flex;
@@ -505,7 +505,7 @@ h6 {
 .footer__copyright {
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .footer__title {
   font-family: "Playfair Display", serif;
@@ -515,6 +515,14 @@ h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
+.footer__title::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: url(/img/icons/icon_before.png);
+  margin: 0 10px 4px 0;
+}
 .footer__subtitle {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -523,6 +531,7 @@ h6 {
   color: white;
   max-width: 303px;
   margin-bottom: 122px;
+  padding-left: 19px;
 }
 .footer__infoCopyright {
   font-family: "Poppins", sans-serif;
@@ -531,13 +540,14 @@ h6 {
   color: white;
   opacity: 0.5;
   font-weight: normal;
+  padding-left: 19px;
 }
 .footer__nav {
   display: flex;
 }
 .footer__navItem {
   max-width: 206;
-  padding-right: 80px;
+  padding-right: 90px;
 }
 .footer__navTitle {
   font-family: "Poppins", sans-serif;
@@ -547,16 +557,74 @@ h6 {
   color: white;
   margin-bottom: 13px;
 }
+.footer__navTitle::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: url(/img/icons/icon_before.png);
+  margin: 0 10px 4px 0;
+}
 .footer__navLinks {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: white;
+  padding-left: 20px;
 }
 .footer__navlink {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 .footer__navLinks a {
   color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .heading__title {
+    padding-left: 15px;
+  }
+  .heading__titleText {
+    font-size: 66px;
+  }
+  .heading__alignText {
+    font-size: 33px;
+  }
+  .heading__imageWoman {
+    left: 80px;
+  }
+  .heading__imageMan {
+    left: 215px;
+  }
+
+  .headingList {
+    margin-top: 270px;
+    padding: 0 15px;
+  }
+
+  .benefits {
+    margin-top: 153px;
+  }
+  .benefits__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .benefits__item {
+    padding: 0;
+  }
+  .benefits__smallTitle {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  .benefits__title {
+    font-size: 90px;
+    text-align: center;
+  }
+  .benefits__bottom {
+    height: 60px;
+    max-width: 185px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
